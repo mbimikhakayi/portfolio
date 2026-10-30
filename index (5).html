@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Portfolio BTS SIO option SISR de Exaucee MBIMI KHAKAYI : parcours, compétences, projets, épreuves et veille.">
+<title>Exaucee MBIMI KHAKAYI – Portfolio BTS SIO SISR</title>
+<script>if('IntersectionObserver' in window){document.documentElement.className+=' js'}</script>
+<style>:root{--nuit:#1D0030;--aub:#3C005A;--lilas:#8052FF;--lien:#6A3DE8;--parme:#D5C5FF;--papier:#F7F3FF;--blanc:#fff;--encre:#2A0A40;--doux:#5E4F73;--trait:#E2D8F5;--led:#3DDC97;--note:#FFF3C4;
+--titre:Poppins,"Segoe UI",Roboto,Arial,Helvetica,sans-serif;--texte:"Segoe UI",Roboto,Arial,Helvetica,sans-serif;--mono:Consolas,Menlo,"Courier New",monospace}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--papier);color:var(--encre);font:17px/1.65 var(--texte);-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--titre);margin:0}
+a{color:var(--lien)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--lilas);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-999px;top:8px;background:#fff;color:var(--aub);padding:8px 14px;border-radius:8px;z-index:20}
+.skip:focus{left:8px}
+.page{max-width:1120px;margin:0 auto;padding:0 24px}
+/* en-tête */
+.haut{position:sticky;top:0;z-index:10;background:rgba(29,0,48,.96);border-bottom:1px solid rgba(213,197,255,.16)}
+@supports(backdrop-filter:blur(8px)){.haut{background:rgba(29,0,48,.78);backdrop-filter:blur(12px)}}
+.haut .page{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:10px;padding-bottom:10px}
+.marque{display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none;font:700 16px var(--titre);white-space:nowrap}
+.mono{display:grid;place-items:center;width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,var(--lilas),var(--aub));font:800 15px var(--titre);letter-spacing:.02em;box-shadow:0 0 0 1px rgba(213,197,255,.35)}
+.haut nav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.haut nav::-webkit-scrollbar{display:none}
+.haut nav a{color:var(--parme);text-decoration:none;font:500 15px var(--titre);padding:8px 14px;border-radius:999px;white-space:nowrap;transition:background .2s,color .2s}
+.haut nav a:hover{background:rgba(213,197,255,.14);color:#fff}
+.haut nav a[aria-current="true"]{background:var(--lilas);color:#fff}
+@media(max-width:820px){.marque span:last-child{display:none}}
+/* héros */
+.hero{position:relative;overflow:hidden;color:#fff;background:var(--nuit)}
+.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(55% 70% at 85% 15%,rgba(128,82,255,.38),transparent 70%),radial-gradient(45% 60% at 5% 100%,rgba(60,0,90,.95),transparent 70%)}
+.hero:after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(213,197,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(213,197,255,.07) 1px,transparent 1px);background-size:46px 46px;-webkit-mask-image:radial-gradient(70% 80% at 60% 40%,#000,transparent);mask-image:radial-gradient(70% 80% at 60% 40%,#000,transparent)}
+.hero .page{position:relative;z-index:1}
+.hero-in{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding-top:72px;padding-bottom:48px}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font:600 13px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--parme);margin:0 0 20px}
+.eyebrow:before{content:"";width:9px;height:9px;border-radius:50%;background:var(--led);box-shadow:0 0 0 0 rgba(61,220,151,.6);animation:pouls 2s infinite}
+@keyframes pouls{70%{box-shadow:0 0 0 10px rgba(61,220,151,0)}100%{box-shadow:0 0 0 0 rgba(61,220,151,0)}}
+.hero h1{font-size:clamp(40px,7vw,80px);line-height:1;letter-spacing:-.035em;font-weight:800;margin:0 0 22px}
+.hero h1 .grad{display:block;color:var(--parme);background:linear-gradient(90deg,#fff,var(--parme) 40%,var(--lilas));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.lead{font-size:19px;color:#E8DEFF;max-width:34em;margin:0 0 22px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 30px;padding:0;list-style:none}
+.chips li{border:1px solid rgba(213,197,255,.32);background:rgba(255,255,255,.05);color:var(--parme);border-radius:999px;padding:6px 14px;font:500 14px var(--titre)}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;text-decoration:none;font:600 16px var(--titre);padding:13px 24px;border-radius:12px;transition:transform .2s,box-shadow .2s,background .2s;border:2px solid transparent}
+.btn:hover{transform:translateY(-3px)}
+.btn.plein{background:var(--lilas);color:#fff;box-shadow:0 10px 28px -10px rgba(128,82,255,.9)}
+.btn.plein:hover{background:#9568FF}
+.btn.contour{border-color:rgba(213,197,255,.55);color:#fff}
+.btn.contour:hover{background:rgba(213,197,255,.14)}
+.btn.sombre{background:var(--aub);color:#fff}
+.btn.sombre:hover{background:var(--lilas)}
+.reseau{width:100%;height:auto;max-width:520px;justify-self:center}
+.reseau .lien{stroke:rgba(213,197,255,.55);stroke-width:2;fill:none}
+.reseau .pointille{stroke:var(--led);stroke-dasharray:6 6;animation:defile 1.2s linear infinite}
+@keyframes defile{to{stroke-dashoffset:-12}}
+.reseau .noeud{fill:rgba(255,255,255,.07);stroke:var(--lilas);stroke-width:2}
+.reseau .noeud.cle{stroke:var(--parme);fill:rgba(128,82,255,.25)}
+.reseau text{fill:#F3ECFF;font:600 13px var(--titre);text-anchor:middle}
+.reseau .sous{font:500 11px var(--mono);fill:var(--parme)}
+.reseau .paquet{fill:var(--led)}
+/* chiffres */
+.chiffres{position:relative;z-index:1;border-top:1px solid rgba(213,197,255,.18)}
+.chiffres ul{list-style:none;margin:0;padding:26px 0 34px;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.chiffres b{display:block;font:800 clamp(34px,5vw,52px)/1 var(--titre);color:#fff;letter-spacing:-.03em}
+.chiffres span{color:var(--parme);font-size:15px}
+/* sections */
+.bloc{padding:92px 0}
+.bloc.blanc{background:#fff}
+.bloc.sombre{background:var(--nuit);color:#fff;position:relative;overflow:hidden}
+.bloc.sombre:before{content:"";position:absolute;inset:0;background:radial-gradient(50% 80% at 90% 0,rgba(128,82,255,.35),transparent 70%)}
+.bloc.sombre .page{position:relative}
+.tete{display:flex;align-items:flex-end;gap:22px;margin:0 0 44px}
+.nb{font:800 clamp(64px,10vw,120px)/.78 var(--titre);color:transparent;-webkit-text-stroke:2px var(--parme);letter-spacing:-.04em;user-select:none}
+.bloc.sombre .nb{-webkit-text-stroke-color:rgba(213,197,255,.5)}
+.tete h2{font-size:clamp(30px,4.6vw,48px);line-height:1.05;font-weight:800;color:var(--aub);letter-spacing:-.025em}
+.bloc.sombre .tete h2{color:#fff}
+.tete p{margin:8px 0 0;color:var(--doux)}
+.bloc.sombre .tete p{color:var(--parme)}
+h3{font-size:20px;line-height:1.25;font-weight:700;color:var(--aub);margin:0 0 8px}
+h4.sous-titre{font:700 14px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--lien);margin:48px 0 18px;display:flex;align-items:center;gap:14px}
+h4.sous-titre:after{content:"";flex:1;height:1px;background:var(--trait)}
+.grille{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
+.quatre{grid-template-columns:repeat(4,1fr)}
+@media(max-width:1000px){.quatre{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}}
+.carte{background:#fff;border:1px solid var(--trait);border-top:4px solid var(--parme);border-radius:16px;padding:26px;box-shadow:0 14px 34px -22px rgba(60,0,90,.45);transition:transform .25s,box-shadow .25s,border-color .25s;scroll-margin-top:96px}
+.bloc.blanc .carte{background:var(--papier)}
+.carte:hover{transform:translateY(-5px);border-top-color:var(--lilas);box-shadow:0 24px 44px -20px rgba(60,0,90,.55)}
+.carte p{margin:8px 0}
+.carte ul{padding-left:20px;margin:10px 0}
+.carte li{margin:5px 0}
+.tag{display:inline-block;font:700 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;padding:4px 11px;border-radius:999px;background:var(--parme);color:var(--aub);margin:0 0 12px}
+.tag.af{background:var(--aub);color:#fff}
+.tag.fo{background:var(--lilas);color:#fff}
+.tag.ju{background:#fff;color:var(--aub);border:1.5px solid var(--aub)}
+.badge{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--aub);color:#fff;font:800 17px var(--titre);margin:0 0 14px}
+.pastille{list-style:none;padding:0!important;display:flex;flex-wrap:wrap;gap:8px}
+.pastille li{border:1.5px solid var(--lilas);color:var(--aub);background:#fff;border-radius:999px;padding:5px 15px;font:600 15px var(--titre);margin:0!important}
+.liens{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 0}
+.liens a{font:600 15px var(--titre);text-decoration:none;background:var(--aub);color:#fff;padding:9px 16px;border-radius:10px;transition:background .2s}
+.liens a:hover{background:var(--lilas)}
+.liens a.clair{background:transparent;color:var(--lien);border:1.5px solid var(--lien)}
+.liens a.clair:hover{background:var(--lien);color:#fff}
+small{font-size:14px;color:var(--doux)}
+/* parcours */
+.accueil{display:grid;grid-template-columns:.9fr 1.1fr;gap:32px;align-items:start}
+.parcours{position:relative;list-style:none;margin:0;padding:6px 0 0 30px;border-left:3px solid var(--parme)}
+.parcours li{position:relative;margin:0 0 26px}
+.parcours li:before{content:"";position:absolute;left:-40px;top:5px;width:17px;height:17px;border-radius:50%;background:#fff;border:4px solid var(--lilas)}
+.parcours li.now:before{background:var(--led);border-color:var(--aub);box-shadow:0 0 0 6px rgba(61,220,151,.25)}
+.parcours .an{font:700 14px var(--mono);letter-spacing:.08em;color:var(--lilas)}
+.parcours b{display:block;font:700 19px var(--titre);color:var(--aub)}
+.parcours span{color:var(--doux)}
+.mot{margin:6px 0 0;padding:18px 20px;border-radius:14px;background:var(--aub);color:#fff}
+.mot b{color:var(--parme)}
+/* tableau */
+.infos{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px 28px}
+.infos p{margin:0!important}
+.infos b{display:block;font:700 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--doux)}
+.tableau{overflow-x:auto;border:1px solid var(--trait);border-radius:14px;background:#fff;box-shadow:0 14px 34px -22px rgba(60,0,90,.45)}
+table{border-collapse:collapse;width:100%;min-width:760px;font-size:14px}
+th,td{border:1px solid var(--trait);padding:8px;vertical-align:middle}
+thead th{background:var(--aub);color:#fff;text-align:center;font:600 12px var(--titre);padding:10px 5px}
+thead th:first-child{text-align:left;padding-left:12px}
+tbody th{text-align:left;font-weight:400;min-width:220px;background:#FBF9FF}
+td{text-align:center;font-weight:800;color:var(--aub);font-size:16px}
+td:nth-child(2){min-width:100px;font-weight:400;font-size:12px}
+tr.groupe th{background:var(--lilas);color:#fff;font:700 14px var(--titre);letter-spacing:.01em}
+.pdf{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 22px}
+/* contact */
+.contact-in{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.bloc.sombre .carte{background:rgba(255,255,255,.06);border-color:rgba(213,197,255,.25);border-top-color:var(--lilas);color:#F3ECFF;box-shadow:none}
+.bloc.sombre .carte h3{color:#fff}
+.bloc.sombre a{color:var(--parme)}
+/* divers */
+mark.a-remplir{background:var(--note);color:#2A0A40;padding:0 5px;border-radius:4px}
+pre{background:var(--nuit);color:#EFE6FF;padding:18px;border-radius:12px;overflow-x:auto;font:14px/1.6 var(--mono);margin:12px 0;border:1px solid rgba(128,82,255,.4)}
+code{font-family:var(--mono);background:#EFE8FF;color:var(--aub);padding:1px 6px;border-radius:5px;font-size:.9em}
+pre code{background:none;color:inherit;padding:0}
+.q{border-left:5px solid var(--lilas);padding:4px 0 4px 18px;margin:20px 0}
+.q h3{font-size:18px;margin:0 0 4px}
+.retour{display:inline-block;color:var(--lien);text-decoration:none;font:600 15px var(--titre);margin:0 0 22px}
+.retour:hover{text-decoration:underline}
+footer{background:var(--nuit);color:var(--parme);padding:30px 0;font-size:15px;border-top:1px solid rgba(213,197,255,.16)}
+footer .page{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+footer a{color:#fff}
+html.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+html.js .reveal.vu{opacity:1;transform:none}
+@media(max-width:900px){.hero-in{grid-template-columns:1fr;padding-top:48px}.reseau{max-width:420px}.accueil,.contact-in{grid-template-columns:1fr}.chiffres ul{grid-template-columns:repeat(2,1fr)}.tete{flex-direction:column;align-items:flex-start;gap:10px}.bloc{padding:64px 0}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}html.js .reveal{opacity:1;transform:none}.reseau .paquet{display:none}}
+@media print{.haut{position:static}.hero:before,.hero:after{display:none}html.js .reveal{opacity:1;transform:none}}
+/* ===== Style institutionnel AFNOR : clair, aéré, aubergine/lilas ===== */
+body{background:#fff}
+.haut{background:#fff!important;backdrop-filter:none;border-bottom:1px solid var(--trait);box-shadow:0 4px 20px -14px rgba(60,0,90,.5)}
+.marque{color:var(--aub)}
+.mono{color:#fff;border-radius:50%;box-shadow:none}
+.haut nav a{color:var(--aub)}
+.haut nav a:hover{background:var(--papier);color:var(--lilas)}
+.haut nav a[aria-current="true"]{background:var(--aub);color:#fff}
+.hero{background:linear-gradient(135deg,#fff 0%,var(--papier) 45%,var(--parme) 130%);color:var(--aub)}
+.hero:before{background:radial-gradient(50% 70% at 90% 10%,rgba(128,82,255,.22),transparent 70%)}
+.hero:after{background-image:none}
+.eyebrow{color:var(--lien)}
+.hero h1{color:var(--aub);letter-spacing:-.03em}
+.hero h1 .grad{background:linear-gradient(90deg,var(--aub),var(--lilas));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.lead{color:var(--encre)}
+.chips li{border-color:var(--parme);background:#fff;color:var(--aub)}
+.btn{border-radius:999px}
+.btn.plein{background:var(--aub);box-shadow:0 10px 24px -12px rgba(60,0,90,.8)}
+.btn.plein:hover{background:var(--lilas)}
+.btn.contour{border-color:var(--aub);color:var(--aub)}
+.btn.contour:hover{background:var(--aub);color:#fff}
+.reseau .lien{stroke:var(--lilas);opacity:.7}
+.reseau .noeud{fill:#fff;stroke:var(--lilas)}
+.reseau .noeud.cle{fill:var(--parme);stroke:var(--aub)}
+.reseau text{fill:var(--aub)}
+.reseau .sous{fill:var(--doux)}
+.chiffres{background:var(--aub);border-top:0}
+.chiffres ul{padding:30px 24px 34px}
+.bloc.blanc{background:#fff}
+.bloc:not(.blanc):not(.sombre){background:var(--papier)}
+.carte{border:1px solid var(--trait);border-top:1px solid var(--trait);border-radius:20px;box-shadow:none;position:relative;overflow:hidden}
+.carte:before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:linear-gradient(var(--lilas),var(--aub))}
+.carte:hover{border-color:var(--lilas);box-shadow:0 18px 40px -24px rgba(60,0,90,.5)}
+.tag{border-radius:6px;text-transform:none;letter-spacing:.02em;font:600 13px var(--titre)}
+.liens a,.liens a.clair{border-radius:999px}
+.bloc.sombre{background:var(--aub)}
+.bloc.sombre:before{background:radial-gradient(45% 70% at 95% 0,rgba(128,82,255,.55),transparent 70%)}
+.tete h2:after{content:"";display:block;width:64px;height:5px;border-radius:3px;background:var(--lilas);margin-top:12px}
+footer{background:var(--nuit)}
+.retour{display:block;width:max-content}
+.hero-in{grid-template-columns:1fr;max-width:820px;padding-top:88px;padding-bottom:64px}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header class="haut"><div class="page">
+  <a class="marque" href="index.html#accueil" aria-label="Accueil"><span class="mono">EM</span><span>Exaucee MBIMI KHAKAYI</span></a>
+  <nav aria-label="Navigation principale"><a href="#accueil">Accueil</a><a href="#competences">Compétences</a><a href="#projets">Projets</a><a href="#epreuves">Épreuves</a><a href="#veille">Veille</a><a href="#contact">Contact</a></nav>
+</div></header>
+<main id="contenu">
+<section class="hero" id="debut">
+  <div class="page">
+    <div class="hero-in">
+      <div>
+        <p class="eyebrow">Portfolio · BTS SIO option SISR</p>
+        <h1>Exaucee<span class="grad">MBIMI KHAKAYI</span></h1>
+        <p class="lead">Technicien support en alternance chez AFNOR. Je me forme aux réseaux, aux systèmes et à la sécurité pour faire fonctionner l’informatique d’une organisation.</p>
+        <ul class="chips"><li>Schola Nova · Paris 19e</li><li>Session 2025 – 2027</li><li>N° candidat 02641899365</li></ul>
+        <div class="btns"><a class="btn plein" href="#projets">Voir mes projets</a><a class="btn contour" href="#epreuves">Tableau de synthèse</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="chiffres"><div class="page"><ul>
+    <li><b>7</b><span>réalisations chez AFNOR</span></li>
+    <li><b>3</b><span>projets de formation</span></li>
+    <li><b>4</b><span>sujets de veille</span></li>
+    <li><b>1/1</b><span>semaine école, semaine entreprise</span></li>
+  </ul></div></div>
+</section>
+
+<section class="bloc" id="accueil">
+  <div class="page">
+    <div class="tete reveal"><span class="nb" aria-hidden="true">01</span><div><h2>Accueil</h2><p>Qui je suis, mon parcours et mon rôle chez AFNOR.</p></div></div>
+    <div class="accueil">
+      <div class="reveal">
+        <h3>Mon parcours</h3>
+        <ol class="parcours">
+          <li><span class="an">2016 – 2019</span><b>Bac pro Électrotechnique</b></li>
+          <li><span class="an">2019 – 2021</span><b>BTS Électrotechnique</b></li>
+          <li class="now"><span class="an">2025 – 2027</span><b>BTS SIO option SISR</b><span>En alternance chez AFNOR</span></li>
+        </ol>
+        <p class="mot"><b>Pourquoi l’informatique ?</b><br>Grâce à mon expérience professionnelle chez MOVU France, j’ai voulu faire ce qui me plaît vraiment : l’informatique. Je me suis donc réorienté vers le BTS SIO.</p>
+      </div>
+      <div class="grille" style="grid-template-columns:1fr">
+        <article class="carte reveal"><span class="tag">Formation</span><h3>Le BTS SIO</h3><p>Le BTS Services Informatiques aux Organisations dure 2 ans. Je suis l’option SISR (Solutions d’Infrastructure, Systèmes et Réseaux) : installer, sécuriser et faire marcher les réseaux et les serveurs, et aider les utilisateurs.</p></article>
+        <article class="carte reveal"><span class="tag af">Entreprise</span><h3>AFNOR</h3><p>Groupe français de la normalisation. Il écrit les normes avec les professionnels, publie et vend des normes, forme sur les normes et délivre des certifications. Le siège est à Saint-Denis. Je travaille à la DSI (direction des systèmes d’information), l’équipe informatique de l’entreprise.</p></article>
+        <article class="carte reveal"><span class="tag fo">École</span><h3>Schola Nova, Paris 19e</h3><p>Alternance au rythme d’une semaine en cours, une semaine en entreprise.</p><div class="liens"><a href="docs/cv.pdf">Ouvrir mon CV (PDF)</a></div></article>
+      </div>
+    </div>
+    <h4 class="sous-titre">Mon rôle chez AFNOR : technicien support</h4>
+    <p class="reveal" style="max-width:46em">Je réponds aux appels des utilisateurs et je traite les tickets. Je me déplace pour dépanner sur place. Je prépare aussi les postes des nouveaux arrivants (CDD, CDI, prestataires, stagiaires, alternants) : je configure leur session et leurs applications.</p>
+    <div class="grille">
+      <article class="carte reveal" id="m1"><span class="badge">1</span><h3>Support au comptoir de la DSI</h3><p>J’accueille les collaborateurs au comptoir de la DSI. Je règle leurs demandes sur place : prise en main du matériel, dépannage, remise ou échange de matériel.</p></article>
+      <article class="carte reveal" id="m2"><span class="badge">2</span><h3>Installation des certificats réseau</h3><p>J’installe les certificats réseau sur les postes. Ils servent à sécuriser la connexion des postes au réseau de l’entreprise.</p></article>
+      <article class="carte reveal" id="m3"><span class="badge">3</span><h3>Prise d’appels des collaborateurs</h3><p>Je réponds aux appels avec le reste de l’équipe, en groupe sur Zoom.</p></article>
+      <article class="carte reveal" id="m4"><span class="badge">4</span><h3>Accueil des nouveaux arrivants</h3><p>Je présente le groupe et le poste confié. Je donne des conseils d’utilisation et je sensibilise à la cybersécurité.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="bloc blanc" id="competences">
+  <div class="page">
+    <div class="tete reveal"><span class="nb" aria-hidden="true">02</span><div><h2>Compétences</h2><p>Les outils et les technologies que je pratique.</p></div></div>
+    <div class="grille quatre">
+      <article class="carte reveal"><h3>Systèmes</h3><ul class="pastille"><li>Windows Server</li><li>Active Directory</li><li>VMware</li><li>Proxmox</li></ul></article>
+      <article class="carte reveal"><h3>Services réseau</h3><ul class="pastille"><li>DNS</li><li>DHCP</li></ul></article>
+      <article class="carte reveal"><h3>Réseau</h3><ul class="pastille"><li>Cisco</li></ul><p>Packet Tracer : HSRP, LACP, sécurité des ports.</p></article>
+      <article class="carte reveal"><h3>Gestion du parc et support</h3><ul class="pastille"><li>GLPI</li></ul></article>
+    </div>
+  </div>
+</section>
+
+<section class="bloc" id="projets">
+  <div class="page">
+    <div class="tete reveal"><span class="nb" aria-hidden="true">03</span><div><h2>Projets</h2><p>Ce que j’ai réalisé en entreprise et en formation.</p></div></div>
+    <h4 class="sous-titre" style="margin-top:0">En entreprise · AFNOR</h4>
+    <div class="grille">
+      <article class="carte reveal" id="p1"><span class="tag af">AFNOR</span><h3>Déploiement des doubles écrans</h3><p>J’ai participé à l’installation des doubles écrans pour les utilisateurs.</p></article>
+      <article class="carte reveal" id="p2"><span class="tag af">AFNOR</span><h3>Remasterisation des PC Lenovo</h3><p>Remasterisation des PC Lenovo, modèles standard et pro.</p>
+        <ul>
+          <li>Dans la salle des serveurs, je fais les réglages dans le BIOS.</li>
+          <li>Je branche chaque PC sur le courant et sur un câble réseau, car un PC sert à programmer les masters.</li>
+          <li>Les administrateurs lancent ensuite la tâche à distance avec le nom du PC, grâce à l’outil Ivanti.</li>
+          <li>La tâche installe Windows 11, nettoie le disque et fait la mise à jour du système.</li>
+        </ul></article>
+      <article class="carte reveal" id="p3"><span class="tag af">AFNOR</span><h3>Renouvellement des postes utilisateurs</h3><p>Remplacement des anciens postes par les nouveaux PC Lenovo. Je prépare les nouveaux postes et je les remets aux utilisateurs.</p></article>
+    </div>
+    <h4 class="sous-titre">En formation · atelier pro</h4>
+    <div class="grille">
+      <article class="carte reveal" id="a1"><span class="tag fo">Formation · A1</span><h3>Projet AD : Eleven Hole Star</h3><p>Projet de groupe : chaque groupe avait un rôle précis. Mon groupe s’occupait des serveurs de fichiers (serveur Samba B06).</p>
+        <ul>
+          <li>J’ai créé les machines virtuelles (VM) avec Proxmox.</li>
+          <li>VM Windows Server et VM Linux (Debian).</li>
+        </ul>
+        <div class="liens"><a href="projet-samba.html">Voir le projet en détail</a><a class="clair" href="docs/B06_Serveur_Fichiers_Samba.pptx" download>Télécharger la présentation</a></div></article>
+      <article class="carte reveal" id="a3"><span class="tag fo">Formation · A3</span><h3>Projet Cyber</h3><p>Sécuriser les ports d’un switch : DHCP snooping, port-security, DAI.</p></article>
+      <article class="carte reveal" id="a4"><span class="tag fo">Formation · A4</span><h3>Projet Cisco</h3><p>Réseau fiable avec Packet Tracer : HSRP (deux routeurs pour une passerelle) et LACP (plusieurs câbles en un seul lien).</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="bloc blanc" id="epreuves">
+  <div class="page">
+    <div class="tete reveal"><span class="nb" aria-hidden="true">04</span><div><h2>Épreuves</h2><p>Mon tableau de synthèse des réalisations professionnelles.</p></div></div>
+    <div class="carte reveal" style="margin-bottom:22px"><div class="infos">
+      <p><b>Nom et prénom</b>Exaucee MBIMI KHAKAYI</p>
+      <p><b>N° candidat</b>02641899365</p>
+      <p><b>Centre de formation</b>Schola Nova Paris 19e</p>
+      <p><b>Option</b>☒ SISR &nbsp; ☐ SLAM</p>
+      <p><b>Adresse URL du portfolio</b><mark class="a-remplir">[https://…]</mark></p>
+    </div></div>
+    <div class="pdf"><a class="btn sombre" href="docs/Tableau_de_synthese_Exaucee_MBIMI_KHAKAYI.xlsx" download>Télécharger le tableau (Excel)</a><a class="btn sombre" href="docs/Tableau_de_synthese_Exaucee_MBIMI_KHAKAYI.pdf">Voir le tableau (PDF)</a></div>
+    <p style="color:var(--doux);max-width:46em">Mes réalisations reliées aux compétences du référentiel. Clique sur une réalisation pour voir son détail. X = compétence travaillée dans la réalisation.</p>
+    <div class="tableau reveal"><table>
+      <thead><tr><th scope="col">Réalisations professionnelles (intitulé et documents associés)</th><th scope="col">Période</th>
+        <th scope="col">Gérer le patrimoine informatique</th><th scope="col">Répondre aux incidents et aux demandes d’assistance et d’évolution</th><th scope="col">Développer la présence en ligne de l’organisation</th><th scope="col">Travailler en mode projet</th><th scope="col">Mettre à disposition des utilisateurs un service informatique</th><th scope="col">Organiser son développement professionnel</th></tr></thead>
+      <tbody>
+        <tr class="groupe"><th colspan="8" scope="colgroup">Réalisation en cours de formation</th></tr>
+        <tr><th scope="row"><a href="#a1">Projet AD (Eleven Hole Star)</a> : serveur de fichiers Samba B06, membre du domaine AD. Documents : <a href="projet-samba.html">page du projet</a> et <a href="docs/B06_Serveur_Fichiers_Samba.pptx" download>présentation PowerPoint</a></th><td><mark class="a-remplir">[JJ/MM/AA au JJ/MM/AA]</mark></td><td>X</td><td></td><td></td><td>X</td><td>X</td><td></td></tr>
+        <tr><th scope="row"><a href="#a3">Projet Cyber</a> : sécurisation des ports d’accès d’un switch (DHCP snooping, port-security, DAI)</th><td><mark class="a-remplir">[JJ/MM/AA au JJ/MM/AA]</mark></td><td>X</td><td></td><td></td><td></td><td>X</td><td></td></tr>
+        <tr><th scope="row"><a href="#a4">Projet Cisco</a> : redondance de la passerelle (HSRP) et agrégation de liens (LACP) sous Packet Tracer</th><td><mark class="a-remplir">[JJ/MM/AA au JJ/MM/AA]</mark></td><td>X</td><td></td><td></td><td></td><td>X</td><td></td></tr>
+        <tr><th scope="row"><a href="#veille">Veille technologique et juridique</a> : IA, cryptographie post-quantique, cybersécurité, RGPD et CNIL</th><td><mark class="a-remplir">[JJ/MM/AA au JJ/MM/AA]</mark></td><td></td><td></td><td></td><td></td><td></td><td>X</td></tr>
+        <tr><th scope="row"><a href="#accueil">Création de mon portfolio</a> (site web)</th><td><mark class="a-remplir">[JJ/MM/AA au JJ/MM/AA]</mark></td><td></td><td></td><td></td><td></td><td></td><td>X</td></tr>
+        <tr class="groupe"><th colspan="8" scope="colgroup">Réalisations en milieu professionnel en cours de première année</th></tr>
+        <tr><th scope="row"><a href="#m1">Support au comptoir de la DSI</a> : accueil des collaborateurs et règlement de leurs demandes</th><td><mark class="a-remplir">[JJ/MM/AA au JJ/MM/AA]</mark></td><td></td><td>X</td><td></td><td></td><td></td><td></td></tr>
+        <tr><th scope="row"><a href="#m2">Installation des certificats réseau</a> sur les postes</th><td><mark class="a-remplir">[JJ/MM/AA au JJ/MM/AA]</mark></td><td></td><td>X</td><td></td><td></td><td>X</td><td></td></tr>
+        <tr><th scope="row"><a href="#m3">Prise d’appels des collaborateurs</a> (équipe groupée sur Zoom) et traitement des tickets</th><td><mark class="a-remplir">[JJ/MM/AA au JJ/MM/AA]</mark></td><td></td><td>X</td><td></td><td></td><td></td><td></td></tr>
+        <tr><th scope="row"><a href="#m4">Accueil des nouveaux arrivants</a> : présentation du groupe et du poste, conseils d’utilisation, sensibilisation à la cybersécurité</th><td><mark class="a-remplir">[JJ/MM/AA au JJ/MM/AA]</mark></td><td>X</td><td></td><td></td><td></td><td>X</td><td></td></tr>
+        <tr><th scope="row"><a href="#p1">Déploiement des doubles écrans</a> pour les utilisateurs (participation)</th><td><mark class="a-remplir">[JJ/MM/AA au JJ/MM/AA]</mark></td><td></td><td></td><td></td><td>X</td><td>X</td><td></td></tr>
+        <tr><th scope="row"><a href="#p2">Remasterisation des PC Lenovo</a> standard et pro : réglages BIOS en salle serveurs, tâche Ivanti (Windows 11, nettoyage, mises à jour)</th><td><mark class="a-remplir">[JJ/MM/AA au JJ/MM/AA]</mark></td><td></td><td></td><td></td><td></td><td>X</td><td></td></tr>
+        <tr><th scope="row"><a href="#p3">Renouvellement des postes utilisateurs</a></th><td><mark class="a-remplir">[JJ/MM/AA au JJ/MM/AA]</mark></td><td>X</td><td></td><td></td><td>X</td><td>X</td><td></td></tr>
+        <tr class="groupe"><th colspan="8" scope="colgroup">Réalisations en milieu professionnel en cours de seconde année</th></tr>
+        <tr><th scope="row">À compléter en seconde année</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      </tbody></table></div>
+  </div>
+</section>
+
+<section class="bloc" id="veille">
+  <div class="page">
+    <div class="tete reveal"><span class="nb" aria-hidden="true">05</span><div><h2>Veille</h2><p>Technologique et juridique : ce que je suis pour rester à jour.</p></div></div>
+    <div class="grille">
+      <article class="carte reveal"><span class="tag">Technologique</span><h3>IA : la démission de Jacob Coxon</h3>
+        <p><b>Septembre 2026.</b> Jacob Coxon travaillait sur l’entraînement des modèles d’IA, d’abord chez OpenAI, puis chez Anthropic. Il a quitté Anthropic après environ 4 mois.</p>
+        <p>Il explique que la course entre les entreprises pousse à prendre des raccourcis sur la sécurité. Il craint des IA devenues trop puissantes et difficiles à surveiller.</p>
+        <p><small>Sources : <a href="https://axios.com/2026/09/09/anthropic-researcher-ai-warning-interview">Axios</a>, <a href="https://www.solutions-numeriques.com/un-ex-chercheur-dopenai-et-anthropic-alerte-sur-la-course-a-lia-apres-sa-demission/">Solutions Numériques</a></small></p></article>
+      <article class="carte reveal"><span class="tag">Technologique</span><h3>Cryptographie post-quantique</h3>
+        <p>Des pirates peuvent copier des données chiffrées aujourd’hui pour les déchiffrer plus tard avec un ordinateur quantique. Les données qui doivent rester secrètes longtemps sont donc déjà en danger.</p>
+        <p>Le NIST a publié en 2024 les premiers standards (ML-KEM, ML-DSA, SLH-DSA). Le 22 mai 2026, la France a annoncé 1 milliard d’euros pour le quantique.</p>
+        <p><small>Source : <a href="https://www.thegreenbow.com/wp-content/uploads/2026/06/Note_de_Synthese_TGB_2026_lannee-du_tournant_strategique.pdf">note de TheGreenBow</a> (un éditeur de VPN, donc à lire avec recul).</small></p></article>
+      <article class="carte reveal"><span class="tag">Technologique</span><h3>Cybersécurité : fuites de données et logiciels espions</h3>
+        <p><b>Fuites :</b> en 2026, 45 % des Français disent avoir été informés d’une fuite de leurs données, contre 30 % en 2025 (baromètre Cybermalveillance, 17 septembre 2026).</p>
+        <p><b>Espionnage :</b> le 27 octobre 2026, trois laboratoires (Citizen Lab, Amnesty Security Lab, SHARE Foundation) ont confirmé l’usage du logiciel espion Pegasus contre au moins 15 personnes en Serbie, dont le recteur de l’université de Belgrade.</p>
+        <p><small>Sources : <a href="https://siecledigital.fr/2026/09/17/en-2026-pres-dun-francais-sur-deux-a-ete-touche-par-une-fuite-de-donnees/">Siècle Digital</a>, <a href="https://techtimes.com/articles/329516/20261027/three-labs-confirm-serbia-hacked-rector-prosecutor-pegasus-before-vote.htm">Tech Times</a></small></p></article>
+      <article class="carte reveal"><span class="tag ju">Juridique</span><h3>RGPD, CNIL et reconnaissance faciale</h3>
+        <p><b>Novembre 2024 :</b> la CNIL a mis en demeure le ministère de l’Intérieur de bloquer la reconnaissance faciale dans ses logiciels, comme BriefCam. Elle jugeait cet usage illégal.</p>
+        <p><b>Juillet 2026 :</b> la loi Ripost a été adoptée. Elle prolonge jusqu’en 2030 la vidéosurveillance algorithmique et l’ouvre au secteur privé, mais elle exclut la reconnaissance faciale.</p>
+        <p><small>Sources : <a href="https://next.ink/160665/briefcam-le-ministere-de-linterieur-mis-en-demeure-de-bloquer-la-reconnaissance-faciale/">Next</a>, <a href="https://www.economiematin.fr/videosurveillance-algorithmique-loi-ripost-experimentation-prolongee-2030">Économie Matin</a></small></p></article>
+    </div>
+    <p style="margin-top:26px"><b>Mes outils de veille :</b> X (Twitter), Andrej Karpathy, SaxX.</p>
+  </div>
+</section>
+
+<section class="bloc sombre" id="contact">
+  <div class="page">
+    <div class="tete reveal"><span class="nb" aria-hidden="true">06</span><div><h2>Contact</h2><p>Me joindre et retrouver mes documents.</p></div></div>
+    <div class="contact-in">
+      <article class="carte reveal"><h3>Me joindre</h3><p>Mail : <mark class="a-remplir">[adresse mail]</mark></p><p>LinkedIn : <mark class="a-remplir">[lien]</mark></p></article>
+      <article class="carte reveal"><h3>Mes documents</h3><div class="liens"><a href="docs/cv.pdf">Mon CV (PDF)</a><a href="docs/Tableau_de_synthese_Exaucee_MBIMI_KHAKAYI.pdf">Tableau de synthèse (PDF)</a><a href="docs/Tableau_de_synthese_Exaucee_MBIMI_KHAKAYI.xlsx" download>Tableau de synthèse (Excel)</a><a href="docs/B06_Serveur_Fichiers_Samba.pptx" download>Présentation du projet Samba</a></div></article>
+    </div>
+  </div>
+</section>
+</main>
+<footer><div class="page"><span>Portfolio BTS SIO option SISR · Session 2025 – 2027</span><span>Exaucee MBIMI KHAKAYI · <a href="#accueil">Haut de page</a></span></div></footer>
+<script>
+(function(){
+ var r=document.querySelectorAll('.reveal');
+ if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('vu');io.unobserve(e.target)}})},{threshold:.1});
+  r.forEach(function(el){io.observe(el)});
+  var liens={};document.querySelectorAll('.haut nav a').forEach(function(a){var h=a.getAttribute('href').split('#')[1];if(h)liens[h]=a});
+  var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){Object.keys(liens).forEach(function(k){liens[k].removeAttribute('aria-current')});if(liens[e.target.id])liens[e.target.id].setAttribute('aria-current','true')}})},{rootMargin:'-45% 0px -50% 0px'});
+  Object.keys(liens).forEach(function(k){var s=document.getElementById(k);if(s)so.observe(s)});
+ }
+})();
+</script>
+</body>
+</html>
