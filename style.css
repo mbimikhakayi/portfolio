@@ -232,3 +232,11 @@ footer a{color:#fff}
 .certif{display:flex;gap:16px;align-items:flex-start}
 .certif>.ms{flex:none;width:48px;height:48px;border-radius:12px;display:grid;place-items:center;background:rgba(128,82,255,.2);color:var(--lilas2);font-size:26px}
 .certif h3{margin:8px 0 6px}
+.synthese{background:linear-gradient(135deg,var(--carte2),var(--carte));border:1px solid var(--bord2);border-radius:20px;padding:24px;margin-bottom:34px}
+.synthese-tete{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;margin-bottom:18px}
+.synthese h2{display:flex;align-items:center;gap:10px;font-size:21px}
+.synthese h2 .ms{color:var(--lilas2);font-size:26px}
+.synthese p{color:var(--doux);margin-top:6px}
+.synthese .actions{display:flex;gap:10px;flex-wrap:wrap}
+.synthese iframe.pdf{width:100%;height:640px;border:0;border-radius:12px;background:#fff;display:block}
+@media(max-width:640px){.synthese iframe.pdf{height:420px}}
