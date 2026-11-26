@@ -221,3 +221,14 @@ footer a{color:#fff}
 .apparait{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
 .apparait.vu{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.apparait{opacity:1;transform:none}}
+.logo-box{flex:none;width:132px;height:64px;border-radius:12px;display:grid;place-items:center;padding:10px 14px;background:var(--aub);border:1px solid var(--bord2);transition:transform .2s}
+.logo-box.blanc{background:#fff;border-color:#fff}
+.logo-box:hover{transform:scale(1.04)}
+.logo-box img{max-width:100%;max-height:100%;width:auto;height:auto;display:block}
+.etab h3 a:hover{text-decoration:underline!important}
+.certifs{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:760px){.certifs{grid-template-columns:1fr}}
+.certifs .carte{margin:0}
+.certif{display:flex;gap:16px;align-items:flex-start}
+.certif>.ms{flex:none;width:48px;height:48px;border-radius:12px;display:grid;place-items:center;background:rgba(128,82,255,.2);color:var(--lilas2);font-size:26px}
+.certif h3{margin:8px 0 6px}
