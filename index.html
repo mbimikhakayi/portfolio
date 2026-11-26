@@ -3,385 +3,109 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Portfolio BTS SIO option SISR de Exaucee MBIMI KHAKAYI : parcours, compétences, projets, veille, épreuves E5 et E6.">
 <title>Exaucee MBIMI KHAKAYI – Portfolio BTS SIO SISR</title>
+<meta name="description" content="Portfolio BTS SIO option SISR d’Exaucee MBIMI KHAKAYI, technicien support en alternance chez AFNOR.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<script>if('IntersectionObserver' in window){document.documentElement.className+=' js'}</script>
-<style>
-/* Couleurs relevées sur afnor.org */
-:root{--aub:#3C005A;--aub2:#511C6C;--aub3:#612282;--lilas:#8052FF;--lilas2:#8B61FF;--clair:#ECE7FD;--fond:#F7F4FE;--encre:#1E0530;--doux:#5E4F73;--trait:#E2D8F5;--blanc:#fff;--note:#FFF3C4;
---police:Poppins,system-ui,"Segoe UI",Arial,sans-serif;--mono:Consolas,Menlo,"Courier New",monospace}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:80px}
-body{margin:0;background:var(--blanc);color:var(--encre);font:16px/1.7 var(--police);-webkit-font-smoothing:antialiased}
-h1,h2,h3,h4{margin:0;line-height:1.2}
-a{color:var(--lilas)}
-a:focus-visible,button:focus-visible{outline:3px solid var(--lilas);outline-offset:3px;border-radius:4px}
-.skip{position:absolute;left:-999px;top:8px;background:#fff;color:var(--aub);padding:8px 14px;border-radius:8px;z-index:30}
-.skip:focus{left:8px}
-.page{max-width:1140px;margin:0 auto;padding:0 24px}
-
-/* En-tête aubergine, comme afnor.org */
-.haut{position:sticky;top:0;z-index:20;background:var(--aub);border-bottom:1px solid rgba(236,231,253,.15)}
-.haut .page{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:68px}
-.marque{display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none;font-weight:700;font-size:16px;white-space:nowrap}
-.mono{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--lilas);font-weight:800;font-size:15px}
-.haut nav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
-.haut nav::-webkit-scrollbar{display:none}
-.haut nav a{color:#fff;text-decoration:none;font-weight:500;font-size:14px;padding:8px 12px;border-radius:999px;white-space:nowrap;transition:background .2s}
-.haut nav a:hover{background:rgba(236,231,253,.14)}
-.haut nav a[aria-current="true"]{background:var(--lilas)}
-@media(max-width:1000px){.marque span:last-child{display:none}}
-
-/* Accueil */
-.hero{position:relative;overflow:hidden;background:var(--aub);color:#fff}
-.hero:before{content:"";position:absolute;right:-180px;bottom:-260px;width:720px;height:520px;border-radius:50%;background:var(--lilas);opacity:.9}
-.hero:after{content:"";position:absolute;right:-60px;bottom:-330px;width:620px;height:460px;border-radius:50%;background:var(--aub2)}
-.hero .page{position:relative;z-index:1;padding-top:80px;padding-bottom:96px}
-.surtitre{font-size:17px;margin:0 0 22px;color:#fff}
-.hero h1{font-size:clamp(40px,6.4vw,72px);font-weight:800;letter-spacing:-.025em;margin:0 0 26px;max-width:13em}
-.hero h1 em{font-style:normal;color:var(--lilas2)}
-.lead{font-size:18px;max-width:36em;margin:0 0 30px}
-.lead b{font-weight:700}
-.btns{display:flex;flex-wrap:wrap;gap:12px}
-.btn{display:inline-block;text-decoration:none;font-weight:600;font-size:15px;padding:13px 26px;border-radius:999px;border:2px solid transparent;transition:transform .2s,background .2s,color .2s}
-.btn:hover{transform:translateY(-2px)}
-.btn.plein{background:var(--lilas);color:#fff}
-.btn.plein:hover{background:var(--lilas2)}
-.btn.contour{border-color:#fff;color:#fff}
-.btn.contour:hover{background:#fff;color:var(--aub)}
-.btn.sombre{background:var(--aub);color:#fff}
-.btn.sombre:hover{background:var(--lilas)}
-.chiffres{position:relative;z-index:1;background:var(--aub2)}
-.chiffres ul{list-style:none;margin:0;padding:28px 24px;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-.chiffres b{display:block;font-size:clamp(32px,4.6vw,48px);font-weight:800;line-height:1;color:#fff}
-.chiffres span{color:var(--clair);font-size:14px}
-
-/* Sections */
-.bloc{padding:88px 0}
-.bloc.clair{background:var(--fond)}
-.bloc.sombre{background:var(--aub);color:#fff}
-.tete{margin:0 0 40px;max-width:46em}
-.tete .num{display:block;font:700 13px var(--mono);letter-spacing:.14em;color:var(--lilas);margin:0 0 10px}
-.tete h2{font-size:clamp(30px,4.4vw,44px);font-weight:800;color:var(--aub);letter-spacing:-.02em}
-.tete h2 em{font-style:normal;color:var(--lilas)}
-.tete p{margin:12px 0 0;color:var(--doux)}
-.bloc.sombre .tete h2{color:#fff}
-.bloc.sombre .tete p{color:var(--clair)}
-.bloc.sombre .tete .num{color:var(--lilas2)}
-h3{font-size:19px;font-weight:700;color:var(--aub);margin:0 0 8px}
-h4.sous{font:700 13px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--lilas);margin:44px 0 18px;display:flex;align-items:center;gap:14px}
-h4.sous:after{content:"";flex:1;height:1px;background:var(--trait)}
-.grille{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
-.quatre{grid-template-columns:repeat(4,1fr)}
-@media(max-width:1000px){.quatre{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}}
-.carte{position:relative;background:#fff;border:1px solid var(--trait);border-radius:20px;padding:26px 26px 24px;transition:transform .25s,box-shadow .25s,border-color .25s;scroll-margin-top:96px}
-.bloc:not(.clair) .carte{background:var(--fond)}
-.carte:hover{transform:translateY(-4px);border-color:var(--lilas);box-shadow:0 20px 40px -24px rgba(60,0,90,.55)}
-.carte p{margin:8px 0}
-.carte ul{padding-left:20px;margin:10px 0}
-.carte li{margin:5px 0}
-.tag{display:inline-block;font-weight:600;font-size:12px;padding:4px 12px;border-radius:999px;background:var(--clair);color:var(--aub);margin:0 0 12px}
-.tag.af{background:var(--aub);color:#fff}
-.tag.fo{background:var(--lilas);color:#fff}
-.tag.ju{background:#fff;color:var(--aub);border:1.5px solid var(--aub)}
-.badge{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--aub);color:#fff;font-weight:800;margin:0 0 14px}
-.pastille{list-style:none;padding:0!important;display:flex;flex-wrap:wrap;gap:8px}
-.pastille li{border:1.5px solid var(--lilas);color:var(--aub);background:#fff;border-radius:999px;padding:4px 14px;font-weight:600;font-size:14px;margin:0!important}
-.liens{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 0}
-.liens a{font-weight:600;font-size:14px;text-decoration:none;background:var(--aub);color:#fff;padding:9px 18px;border-radius:999px;transition:background .2s}
-.liens a:hover{background:var(--lilas)}
-.liens a.clair{background:transparent;color:var(--aub);border:1.5px solid var(--aub)}
-.liens a.clair:hover{background:var(--aub);color:#fff}
-small{font-size:13px;color:var(--doux)}
-.deux{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
-.encadre{padding:22px 24px;border-radius:20px;background:var(--aub);color:#fff;margin:0}
-.encadre b{color:var(--clair)}
-
-/* Parcours */
-.frise{position:relative;list-style:none;margin:0;padding:6px 0 0 30px;border-left:3px solid var(--clair)}
-.frise>li{position:relative;margin:0 0 28px}
-.frise>li:before{content:"";position:absolute;left:-41px;top:5px;width:19px;height:19px;border-radius:50%;background:#fff;border:4px solid var(--lilas)}
-.frise>li.now:before{background:var(--lilas);border-color:var(--aub);box-shadow:0 0 0 6px rgba(128,82,255,.2)}
-.frise .an{font:700 13px var(--mono);letter-spacing:.08em;color:var(--lilas)}
-.frise b{display:block;font-size:18px;color:var(--aub)}
-.frise span{color:var(--doux)}
-.frise ul{margin:8px 0 0;padding-left:20px;color:var(--encre)}
-
-/* Tableau E5 */
-.infos{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px 28px}
-.infos p{margin:0!important}
-.infos b{display:block;font:700 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--doux)}
-.tableau{overflow-x:auto;border:1px solid var(--trait);border-radius:16px;background:#fff}
-table{border-collapse:collapse;width:100%;min-width:780px;font-size:14px}
-th,td{border:1px solid var(--trait);padding:8px;vertical-align:middle}
-thead th{background:var(--aub);color:#fff;text-align:center;font-weight:600;font-size:12px;padding:10px 5px}
-thead th:first-child{text-align:left;padding-left:12px}
-tbody th{text-align:left;font-weight:400;min-width:220px;background:var(--fond)}
-td{text-align:center;font-weight:800;color:var(--aub);font-size:16px}
-td:nth-child(2){min-width:100px;font-weight:400;font-size:12px}
-tr.groupe th{background:var(--lilas);color:#fff;font-weight:700}
-.docs{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 22px}
-
-/* Contact */
-.bloc.sombre .carte{background:rgba(255,255,255,.07);border-color:rgba(236,231,253,.25);color:#fff}
-.bloc.sombre .carte h3{color:#fff}
-.bloc.sombre a{color:var(--clair)}
-.bloc.sombre .liens a{background:var(--lilas);color:#fff}
-.bloc.sombre .liens a:hover{background:var(--lilas2)}
-
-code{font-family:var(--mono);background:var(--clair);color:var(--aub);padding:1px 6px;border-radius:5px;font-size:.88em}
-mark.a-remplir{background:var(--note);color:var(--encre);padding:0 5px;border-radius:4px}
-footer{background:var(--encre);color:var(--clair);padding:28px 0;font-size:14px}
-footer .page{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
-footer a{color:#fff}
-html.js .reveal{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease}
-html.js .reveal.vu{opacity:1;transform:none}
-@media(max-width:900px){.deux{grid-template-columns:1fr}.chiffres ul{grid-template-columns:repeat(2,1fr)}.bloc{padding:64px 0}.hero .page{padding-top:56px;padding-bottom:72px}}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}html.js .reveal{opacity:1;transform:none}}
-@media print{.haut{position:static}.hero:before,.hero:after{display:none}html.js .reveal{opacity:1;transform:none}}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=block" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <a class="skip" href="#contenu">Aller au contenu</a>
-<header class="haut"><div class="page">
-<a class="marque" href="#accueil" aria-label="Retour à l’accueil"><span class="mono">EM</span><span>Exaucee MBIMI KHAKAYI</span></a>
-<nav aria-label="Navigation principale">
-<a href="#accueil">Accueil</a><a href="#apropos">À propos</a><a href="#competences">Compétences</a><a href="#certifications">Certifications</a><a href="#parcours">Parcours</a><a href="#projets">Projets</a><a href="#veille">Veille</a><a href="#e5">E5</a><a href="#e6">E6</a><a href="#contact">Contact</a>
-</nav>
+<header class="haut"><div class="wrap">
+<a class="logo" href="index.html"><i>EM</i>Exaucee MBIMI KHAKAYI</a>
+<nav aria-label="Navigation principale"><button class="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span class="ms">menu</span></button><ul class="menu"><li><a href="index.html" aria-current="page">Accueil</a></li><li><a href="competences.html">Compétences</a></li><li><a href="projets.html">Projets</a></li><li><a href="epreuves.html">Épreuves</a></li><li><a href="veille.html">Veille</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
 </div></header>
-
 <main id="contenu">
 
-<!-- ACCUEIL -->
-<section class="hero" id="accueil">
-<div class="page">
-<p class="surtitre">Portfolio · BTS SIO option SISR · Session 2025 – 2027</p>
-<h1>Exaucee MBIMI KHAKAYI, <em>technicien support</em> chez AFNOR</h1>
-<p class="lead">En alternance à la <b>DSI d’AFNOR</b>, je me forme aux <b>réseaux</b>, aux <b>systèmes</b> et à la <b>sécurité</b> pour faire fonctionner l’informatique d’une organisation.</p>
-<div class="btns"><a class="btn plein" href="#apropos">Découvrir mon profil</a><a class="btn contour" href="#contact">Me contacter</a><a class="btn contour" href="docs/cv.pdf">Télécharger mon CV</a></div>
-</div>
-<div class="chiffres"><div class="page"><ul>
-<li><b>7</b><span>réalisations chez AFNOR</span></li>
-<li><b>3</b><span>projets de formation</span></li>
-<li><b>4</b><span>sujets de veille</span></li>
-<li><b>1/1</b><span>semaine école, semaine entreprise</span></li>
-</ul></div></div>
+<section class="hero"><div class="wrap">
+<div class="avatar" aria-hidden="true">EM</div>
+<h1>Exaucee MBIMI KHAKAYI</h1>
+<div class="sous-ligne">Étudiant en BTS SIO option SISR</div>
+<p class="poste">Technicien support en alternance chez <b>AFNOR</b></p>
+<p class="intro">Ce portfolio présente mon parcours, mes compétences, mes projets de formation et mes réalisations en entreprise.<span>Bonne visite !</span></p>
+<a class="btn grand" href="docs/cv.pdf" target="_blank" rel="noopener">Voir mon CV <span class="ms">description</span></a>
+</div></section>
+
+<div class="wrap">
+<section class="bloc apparait">
+<h2 class="h-sec blanc">Le BTS SIO</h2>
+<p class="texte-sec">Le Brevet de Technicien Supérieur <b>Services Informatiques aux Organisations</b> (BTS SIO) se prépare en deux ans. Il forme aux métiers de l’infrastructure et du développement, et permet soit d’entrer vite dans la vie professionnelle, soit de poursuivre ses études.</p>
+<article class="carte vedette">
+<h3><span class="ms">settings_ethernet</span>OPTION SISR <span class="pastille">Ma spécialité</span></h3>
+<p>L’option <b>Solutions d’Infrastructure, Systèmes et Réseaux</b> forme des professionnels capables d’installer, de sécuriser et de faire fonctionner les réseaux, les serveurs et les postes d’une organisation, et d’assister les utilisateurs. Elle prépare notamment aux métiers suivants :</p>
+<ul class="coches"><li><span class="ms">check</span>Administrateur systèmes et réseaux</li><li><span class="ms">check</span>Technicien support et déploiement</li><li><span class="ms">check</span>Technicien d’exploitation et de production</li></ul>
+</article>
+<article class="carte">
+<h3><span class="ms">code</span>OPTION SLAM</h3>
+<p>L’option <b>Solutions Logicielles et Applications Métiers</b> forme des développeurs d’applications et des spécialistes des logiciels métiers.</p>
+<ul class="coches"><li><span class="ms">chevron_right</span>Développeur d’applications</li><li><span class="ms">chevron_right</span>Analyste programmeur</li></ul>
+</article>
 </section>
 
-<!-- À PROPOS -->
-<section class="bloc" id="apropos">
-<div class="page">
-<div class="tete reveal"><span class="num">01 · À PROPOS</span><h2>Qui je <em>suis</em></h2><p>Ma formation, mon entreprise et mon rôle au quotidien.</p></div>
-<div class="grille">
-<article class="carte reveal"><span class="tag">Formation</span><h3>Le BTS SIO</h3><p>Le BTS Services Informatiques aux Organisations dure 2 ans. Je suis l’option SISR (Solutions d’Infrastructure, Systèmes et Réseaux) : installer, sécuriser et faire marcher les réseaux et les serveurs, et aider les utilisateurs.</p></article>
-<article class="carte reveal"><span class="tag af">Entreprise</span><h3>AFNOR</h3><p>Groupe français de la normalisation. Il écrit les normes avec les professionnels, publie et vend des normes, forme sur les normes et délivre des certifications. Le siège est à Saint-Denis. Je travaille à la DSI (direction des systèmes d’information), l’équipe informatique de l’entreprise.</p></article>
-<article class="carte reveal"><span class="tag fo">École</span><h3>Schola Nova, Paris 19e</h3>
-<p>Schola Nova est une école privée installée au 51 quai de la Seine, dans le 19e arrondissement de Paris. Elle se présente comme une école sociale et solidaire, qui met l’humain au cœur de son projet.</p>
-<p>Toutes ses formations se font en alternance et la pratique est au centre de l’apprentissage. Les cours sont donnés par des intervenants qui viennent du monde de l’entreprise et partagent leur expérience du terrain. Les formations en alternance sont gratuites pour les étudiants.</p>
-<p>L’école nous accompagne de près : aide pour trouver l’alternance (CV, préparation aux entretiens), puis suivi tout au long du contrat, avec un chargé de relations entreprises disponible. L’esprit d’équipe et l’entraide entre étudiants comptent beaucoup.</p>
-<p>En plus du BTS SIO, Schola Nova propose des formations en réseaux, cybersécurité et infrastructures (BTS CIEL, bachelors), ce qui permet de poursuivre ses études dans la même école.</p>
-<p><b>Mon rythme :</b> une semaine en cours, une semaine en entreprise chez AFNOR.</p></article>
+<section class="bloc apparait">
+<h2 class="h-sec"><span class="ms">apartment</span>Mon École</h2>
+<article class="carte vedette">
+<div class="etab"><div class="icone">Schola<br>Nova</div><div><h3>Schola Nova</h3><small>Centre de formation en alternance</small></div></div>
+<p>Schola Nova est une école privée de Paris 19e qui forme <b>exclusivement en alternance</b>, du BTS au Bac+3, en <b>informatique</b> (systèmes, réseaux, cybersécurité) ainsi qu’en commerce et en gestion. Elle se définit comme une <b>école sociale et solidaire</b> qui met l’humain au cœur de son projet.</p>
+<p>La pratique est au centre de l’apprentissage : les cours sont assurés par des intervenants issus du monde de l’entreprise, qui partagent leur expérience du terrain. Les formations en alternance sont <b>gratuites pour les étudiants</b>.</p>
+<div class="atouts">
+<div class="atout"><span class="ms">handshake</span><b>Accompagnement</b><span>Aide à la recherche d’alternance : CV, préparation aux entretiens, mise en relation avec les entreprises partenaires.</span></div>
+<div class="atout"><span class="ms">support_agent</span><b>Suivi personnalisé</b><span>Un chargé de relations entreprises reste disponible et à l’écoute pendant tout le contrat.</span></div>
+<div class="atout"><span class="ms">groups</span><b>Esprit d’équipe</b><span>L’entraide entre étudiants et la proximité avec l’équipe pédagogique font partie des valeurs de l’école.</span></div>
+<div class="atout"><span class="ms">trending_up</span><b>Poursuite d’études</b><span>Après le BTS SIO, l’école propose des bachelors en réseaux, infrastructures et cybersécurité.</span></div>
 </div>
-<h4 class="sous">Mon rôle chez AFNOR : technicien support</h4>
-<p class="reveal" style="max-width:48em">Je réponds aux appels des utilisateurs et je traite les tickets. Je me déplace pour dépanner sur place. Je prépare aussi les postes des nouveaux arrivants (CDD, CDI, prestataires, stagiaires, alternants) : je configure leur session et leurs applications.</p>
-<div class="grille">
-<article class="carte reveal" id="m1"><span class="badge">1</span><h3>Support au comptoir de la DSI</h3><p>J’accueille les collaborateurs au comptoir de la DSI. Je règle leurs demandes sur place : prise en main du matériel, dépannage, remise ou échange de matériel.</p></article>
-<article class="carte reveal" id="m2"><span class="badge">2</span><h3>Installation des certificats réseau</h3><p>J’installe les certificats réseau sur les postes. Ils servent à sécuriser la connexion des postes au réseau de l’entreprise.</p></article>
-<article class="carte reveal" id="m3"><span class="badge">3</span><h3>Prise d’appels des collaborateurs</h3><p>Je réponds aux appels avec le reste de l’équipe, en groupe sur Zoom.</p></article>
-<article class="carte reveal" id="m4"><span class="badge">4</span><h3>Accueil des nouveaux arrivants</h3><p>Je présente le groupe et le poste confié. Je donne des conseils d’utilisation et je sensibilise à la cybersécurité.</p></article>
-</div>
-</div>
+<p class="adresse"><span class="ms">location_on</span>51 quai de la Seine, 75019 Paris · Rythme : 1 semaine en cours, 1 semaine en entreprise</p>
+<a class="btn petit" href="https://scholanova-group.org/" target="_blank" rel="noopener">Visiter le site <span class="ms">open_in_new</span></a>
+</article>
 </section>
 
-<!-- COMPÉTENCES -->
-<section class="bloc clair" id="competences">
-<div class="page">
-<div class="tete reveal"><span class="num">02 · COMPÉTENCES</span><h2>Ce que je <em>maîtrise</em></h2><p>Les outils et les technologies que je pratique.</p></div>
-<div class="grille quatre">
-<article class="carte reveal"><h3>Systèmes</h3><ul class="pastille"><li>Windows Server</li><li>Active Directory</li><li>VMware</li><li>Proxmox</li><li>Linux Debian</li></ul></article>
-<article class="carte reveal"><h3>Services réseau</h3><ul class="pastille"><li>DNS</li><li>DHCP</li><li>Samba</li></ul></article>
-<article class="carte reveal"><h3>Réseau et sécurité</h3><ul class="pastille"><li>Cisco</li><li>Packet Tracer</li></ul><p>HSRP, LACP, DHCP snooping, port-security, DAI.</p></article>
-<article class="carte reveal"><h3>Parc et support</h3><ul class="pastille"><li>GLPI</li><li>Ivanti</li><li>Zoom</li></ul></article>
-</div>
-</div>
-</section>
-
-<!-- CERTIFICATIONS -->
-<section class="bloc" id="certifications">
-<div class="page">
-<div class="tete reveal"><span class="num">03 · CERTIFICATIONS</span><h2>Mes <em>certifications</em></h2><p>Les attestations obtenues en dehors du BTS.</p></div>
-<div class="grille">
-<article class="carte reveal"><span class="tag">Certification</span><h3><mark class="a-remplir">[Intitulé]</mark></h3><p><mark class="a-remplir">[Organisme, date]</mark></p></article>
-<article class="carte reveal"><span class="tag">Certification</span><h3><mark class="a-remplir">[Intitulé]</mark></h3><p><mark class="a-remplir">[Organisme, date]</mark></p></article>
-</div>
-</div>
-</section>
-
-<!-- PARCOURS -->
-<section class="bloc clair" id="parcours">
-<div class="page">
-<div class="tete reveal"><span class="num">04 · PARCOURS</span><h2>Mon <em>parcours</em></h2><p>De l’électrotechnique à l’informatique.</p></div>
-<div class="deux">
-<div class="reveal">
-<h3>Formation</h3>
+<section class="bloc apparait">
+<div class="deux-col">
+<div>
+<h2 class="h-sec"><span class="ms">school</span>Parcours Scolaire</h2>
 <ol class="frise">
-<li class="now"><span class="an">2025 – 2027</span><b>BTS SIO option SISR</b><span>Schola Nova, Paris 19e · en alternance chez AFNOR</span></li>
-<li><span class="an">2019 – 2021</span><b>BTS Électrotechnique</b></li>
-<li><span class="an">2016 – 2019</span><b>Bac pro Électrotechnique</b></li>
+<li><span class="date">2025 – 2027</span><b>BTS SIO – Option SISR</b><span>Schola Nova – Paris 19e</span><span>Solutions d’Infrastructure, Systèmes et Réseaux</span></li>
+<li class="passe"><span class="date">2019 – 2021</span><b>BTS Électrotechnique</b><span>Lycée polyvalent Gustave Monod – Enghien-les-Bains</span></li>
+<li class="passe"><span class="date">2016 – 2019</span><b>Bac Pro MELEC</b><span>Lycée de la Tourelle – Sarcelles</span><span>Métiers de l’électricité et de ses environnements connectés</span></li>
 </ol>
 </div>
-<div class="reveal">
-<h3>Expérience</h3>
+<div>
+<h2 class="h-sec"><span class="ms">work</span>Expériences Professionnelles</h2>
 <ol class="frise">
-<li class="now"><span class="an">2025 – 2027</span><b>Technicien support en alternance</b><span>AFNOR, DSI · Saint-Denis</span>
-<ul><li>Support au comptoir, appels et tickets</li><li>Préparation et renouvellement des postes</li><li>Remasterisation des PC Lenovo</li></ul></li>
-<li><span class="an">2022 – 2024</span><b>Technicien électrotechnicien</b><span>MOVU France</span></li>
+<li><span class="date">2025 – 2027 · Alternance</span><b>AFNOR – Technicien support</b><span>Support aux utilisateurs, préparation et déploiement des postes à la DSI.</span></li>
+<li class="passe"><span class="date">2022 – 2024</span><b>MOVU France – Technicien électrotechnicien</b><span>C’est cette expérience qui m’a donné envie de me réorienter vers l’informatique.</span></li>
 </ol>
-<p class="encadre"><b>Pourquoi l’informatique ?</b><br>Grâce à mon expérience professionnelle chez MOVU France, j’ai voulu faire ce qui me plaît vraiment : l’informatique. Je me suis donc réorienté vers le BTS SIO.</p>
-</div>
-</div>
-</div>
-</section>
-
-<!-- PROJETS -->
-<section class="bloc" id="projets">
-<div class="page">
-<div class="tete reveal"><span class="num">05 · PROJETS</span><h2>Mes <em>réalisations</em></h2><p>Ce que j’ai réalisé en entreprise et en formation.</p></div>
-<h4 class="sous" style="margin-top:0">En entreprise · AFNOR</h4>
-<div class="grille">
-<article class="carte reveal" id="p1"><span class="tag af">AFNOR</span><h3>Déploiement des doubles écrans</h3><p>J’ai participé au déploiement des doubles écrans sur les postes des utilisateurs, pour améliorer l’ergonomie de l’espace de travail.</p>
-<ul>
-<li>On branche et on configure l’écran principal <b>Iiyama</b>.</li>
-<li>On installe les <b>certificats réseau à jour</b>, pour que l’utilisateur ou l’utilisatrice puisse se connecter au réseau par le câble Ethernet branché sur l’écran.</li>
-<li>Le PC portable se branche à l’Iiyama avec un câble <b>USB-C vers USB-C</b> : l’image du portable s’affiche sur l’écran, et le même câble recharge le PC.</li>
-<li>Pour faire fonctionner le deuxième écran (<b>HP</b>), on change la source de l’Iiyama vers le <b>DisplayPort</b>, puis on relie le DisplayPort de l’Iiyama au DisplayPort du HP.</li>
-</ul>
-<p>Cette configuration est la même sur chaque poste utilisateur.</p></article>
-<article class="carte reveal" id="p2"><span class="tag af">AFNOR</span><h3>Remasterisation des PC Lenovo</h3><p>Remasterisation des PC Lenovo, modèles standard et pro.</p>
-<ul>
-<li>Dans la salle des serveurs, je fais les réglages dans le BIOS.</li>
-<li>Je branche chaque PC sur le courant et sur un câble réseau, car un PC sert à programmer les masters.</li>
-<li>Les administrateurs lancent ensuite la tâche à distance avec le nom du PC, grâce à l’outil Ivanti.</li>
-<li>La tâche installe Windows 11, nettoie le disque et fait la mise à jour du système.</li>
-</ul></article>
-<article class="carte reveal" id="p3"><span class="tag af">AFNOR</span><h3>Renouvellement des postes utilisateurs</h3><p>Remplacement des anciens postes par les nouveaux PC Lenovo. Je prépare les nouveaux postes et je les remets aux utilisateurs.</p></article>
-</div>
-<h4 class="sous">En formation · atelier pro</h4>
-<div class="grille">
-<article class="carte reveal" id="a1"><span class="tag fo">Formation · A1</span><h3>Projet AD : Eleven Hole Star</h3><p>Projet de groupe : chaque groupe avait un rôle précis. Mon groupe s’occupait des serveurs de fichiers (serveur Samba B06).</p>
-<ul><li>J’ai créé les machines virtuelles (VM) avec Proxmox.</li><li>VM Windows Server et VM Linux (Debian).</li></ul>
-<div class="liens"><a href="docs/B06_Serveur_Fichiers_Samba.pdf">Voir la présentation (PDF)</a><a class="clair" href="#e6">Voir dans l’épreuve E6</a></div></article>
-<article class="carte reveal" id="a3"><span class="tag fo">Formation · A3</span><h3>Projet Cyber</h3><p>Sécuriser les ports d’un switch : DHCP snooping, port-security, DAI.</p></article>
-<article class="carte reveal" id="a4"><span class="tag fo">Formation · A4</span><h3>Projet Cisco</h3><p>Réseau fiable avec Packet Tracer : HSRP (deux routeurs pour une passerelle) et LACP (plusieurs câbles en un seul lien).</p></article>
 </div>
 </div>
 </section>
 
-<!-- VEILLE -->
-<section class="bloc clair" id="veille">
-<div class="page">
-<div class="tete reveal"><span class="num">06 · VEILLE</span><h2>Ma <em>veille</em> technologique et juridique</h2><p>Ce que je suis pour rester à jour.</p></div>
-<div class="grille">
-<article class="carte reveal"><span class="tag">Technologique</span><h3>IA : la démission de Jacob Coxon</h3>
-<p><b>Septembre 2026.</b> Jacob Coxon travaillait sur l’entraînement des modèles d’IA, d’abord chez OpenAI, puis chez Anthropic. Il a quitté Anthropic après environ 4 mois.</p>
-<p>Il explique que la course entre les entreprises pousse à prendre des raccourcis sur la sécurité. Il craint des IA devenues trop puissantes et difficiles à surveiller.</p>
-<p><small>Sources : <a href="https://axios.com/2026/09/09/anthropic-researcher-ai-warning-interview">Axios</a>, <a href="https://www.solutions-numeriques.com/un-ex-chercheur-dopenai-et-anthropic-alerte-sur-la-course-a-lia-apres-sa-demission/">Solutions Numériques</a></small></p></article>
-<article class="carte reveal"><span class="tag">Technologique</span><h3>Cryptographie post-quantique</h3>
-<p>Des pirates peuvent copier des données chiffrées aujourd’hui pour les déchiffrer plus tard avec un ordinateur quantique. Les données qui doivent rester secrètes longtemps sont donc déjà en danger.</p>
-<p>Le NIST a publié en 2024 les premiers standards (ML-KEM, ML-DSA, SLH-DSA). Le 22 mai 2026, la France a annoncé 1 milliard d’euros pour le quantique.</p>
-<p><small>Source : <a href="https://www.thegreenbow.com/wp-content/uploads/2026/06/Note_de_Synthese_TGB_2026_lannee-du_tournant_strategique.pdf">note de TheGreenBow</a> (un éditeur de VPN, donc à lire avec recul).</small></p></article>
-<article class="carte reveal"><span class="tag">Technologique</span><h3>Cybersécurité : fuites de données et logiciels espions</h3>
-<p><b>Fuites :</b> en 2026, 45 % des Français disent avoir été informés d’une fuite de leurs données, contre 30 % en 2025 (baromètre Cybermalveillance, 17 septembre 2026).</p>
-<p><b>Espionnage :</b> le 27 octobre 2026, trois laboratoires (Citizen Lab, Amnesty Security Lab, SHARE Foundation) ont confirmé l’usage du logiciel espion Pegasus contre au moins 15 personnes en Serbie, dont le recteur de l’université de Belgrade.</p>
-<p><small>Sources : <a href="https://siecledigital.fr/2026/09/17/en-2026-pres-dun-francais-sur-deux-a-ete-touche-par-une-fuite-de-donnees/">Siècle Digital</a>, <a href="https://techtimes.com/articles/329516/20261027/three-labs-confirm-serbia-hacked-rector-prosecutor-pegasus-before-vote.htm">Tech Times</a></small></p></article>
-<article class="carte reveal"><span class="tag ju">Juridique</span><h3>RGPD, CNIL et reconnaissance faciale</h3>
-<p><b>Novembre 2024 :</b> la CNIL a mis en demeure le ministère de l’Intérieur de bloquer la reconnaissance faciale dans ses logiciels, comme BriefCam. Elle jugeait cet usage illégal.</p>
-<p><b>Juillet 2026 :</b> la loi Ripost a été adoptée. Elle prolonge jusqu’en 2030 la vidéosurveillance algorithmique et l’ouvre au secteur privé, mais elle exclut la reconnaissance faciale.</p>
-<p><small>Sources : <a href="https://next.ink/160665/briefcam-le-ministere-de-linterieur-mis-en-demeure-de-bloquer-la-reconnaissance-faciale/">Next</a>, <a href="https://www.economiematin.fr/videosurveillance-algorithmique-loi-ripost-experimentation-prolongee-2030">Économie Matin</a></small></p></article>
-</div>
-<p style="margin-top:26px"><b>Mes outils de veille :</b> X (Twitter), Andrej Karpathy, SaxX.</p>
-</div>
+<section class="bloc apparait">
+<h2 class="h-sec">Mon Entreprise</h2>
+<p class="texte-sec" style="text-transform:uppercase;letter-spacing:.08em;font-size:13px">Alternance BTS SIO SISR</p>
+<article class="carte vedette">
+<div class="etab"><div class="icone">AFNOR</div><div><h3>AFNOR</h3><small>Groupe AFNOR · DSI</small></div></div>
+<p style="color:#fff;font-weight:600;margin-bottom:8px">Technicien support – Alternance</p>
+<p>AFNOR est le groupe français de la normalisation, au service des organisations depuis <b>1926</b>. Il élabore les normes avec les professionnels, publie et vend des normes, forme aux normes et délivre des certifications. Son siège est à <b>Saint-Denis</b>.</p>
+<p>Je travaille à la <b>DSI</b> (direction des systèmes d’information), l’équipe qui gère l’informatique de l’entreprise : je réponds aux demandes des utilisateurs, je traite les tickets et je prépare les postes des nouveaux arrivants (CDD, CDI, prestataires, stagiaires, alternants).</p>
+<div class="deux-btn"><a class="btn petit" href="https://www.afnor.org" target="_blank" rel="noopener">Visiter le site <span class="ms">open_in_new</span></a><a class="btn petit contour" href="projets.html">Mes projets chez AFNOR <span class="ms">arrow_forward</span></a></div>
+</article>
 </section>
 
-<!-- E5 -->
-<section class="bloc" id="e5">
-<div class="page">
-<div class="tete reveal"><span class="num">07 · ÉPREUVE E5</span><h2>Support et mise à disposition de <em>services informatiques</em></h2><p>Mon tableau de synthèse : mes réalisations reliées aux compétences du référentiel.</p></div>
-<div class="carte reveal" style="margin-bottom:22px"><div class="infos">
-<p><b>Nom et prénom</b>Exaucee MBIMI KHAKAYI</p>
-<p><b>N° candidat</b>02641899365</p>
-<p><b>Centre de formation</b>Schola Nova Paris 19e</p>
-<p><b>Option</b>☒ SISR &nbsp; ☐ SLAM</p>
-<p><b>Adresse URL du portfolio</b><a href="https://exaucee-mbimi-khakayi.vercel.app">exaucee-mbimi-khakayi.vercel.app</a></p>
-</div></div>
-<div class="docs"><a class="btn sombre" href="docs/Tableau_de_synthese_Exaucee_MBIMI_KHAKAYI.xlsx" download>Télécharger le tableau (Excel)</a><a class="btn sombre" href="docs/Tableau_de_synthese_Exaucee_MBIMI_KHAKAYI.pdf">Voir le tableau (PDF)</a></div>
-<p style="color:var(--doux);max-width:46em">Clique sur une réalisation pour voir son détail. X = compétence travaillée dans la réalisation.</p>
-<div class="tableau reveal"><table>
-<thead><tr><th scope="col">Réalisations professionnelles (intitulé et documents associés)</th><th scope="col">Période</th>
-<th scope="col">Gérer le patrimoine informatique</th><th scope="col">Répondre aux incidents et aux demandes d’assistance et d’évolution</th><th scope="col">Développer la présence en ligne de l’organisation</th><th scope="col">Travailler en mode projet</th><th scope="col">Mettre à disposition des utilisateurs un service informatique</th><th scope="col">Organiser son développement professionnel</th></tr></thead>
-<tbody>
-<tr class="groupe"><th colspan="8" scope="colgroup">Réalisation en cours de formation</th></tr>
-<tr><th scope="row"><a href="#a1">Projet AD (Eleven Hole Star)</a> : serveur de fichiers Samba B06, membre du domaine AD. Documents : <a href="#e6">épreuve E6</a> et <a href="docs/B06_Serveur_Fichiers_Samba.pdf">présentation (PDF)</a></th><td><mark class="a-remplir">[JJ/MM/AA au JJ/MM/AA]</mark></td><td>X</td><td></td><td></td><td>X</td><td>X</td><td></td></tr>
-<tr><th scope="row"><a href="#a3">Projet Cyber</a> : sécurisation des ports d’accès d’un switch (DHCP snooping, port-security, DAI)</th><td><mark class="a-remplir">[JJ/MM/AA au JJ/MM/AA]</mark></td><td>X</td><td></td><td></td><td></td><td>X</td><td></td></tr>
-<tr><th scope="row"><a href="#a4">Projet Cisco</a> : redondance de la passerelle (HSRP) et agrégation de liens (LACP) sous Packet Tracer</th><td><mark class="a-remplir">[JJ/MM/AA au JJ/MM/AA]</mark></td><td>X</td><td></td><td></td><td></td><td>X</td><td></td></tr>
-<tr><th scope="row"><a href="#veille">Veille technologique et juridique</a> : IA, cryptographie post-quantique, cybersécurité, RGPD et CNIL</th><td><mark class="a-remplir">[JJ/MM/AA au JJ/MM/AA]</mark></td><td></td><td></td><td></td><td></td><td></td><td>X</td></tr>
-<tr><th scope="row"><a href="#accueil">Création de mon portfolio</a> (site web)</th><td><mark class="a-remplir">[JJ/MM/AA au JJ/MM/AA]</mark></td><td></td><td></td><td></td><td></td><td></td><td>X</td></tr>
-<tr class="groupe"><th colspan="8" scope="colgroup">Réalisations en milieu professionnel en cours de première année</th></tr>
-<tr><th scope="row"><a href="#m1">Support au comptoir de la DSI</a> : accueil des collaborateurs et règlement de leurs demandes</th><td><mark class="a-remplir">[JJ/MM/AA au JJ/MM/AA]</mark></td><td></td><td>X</td><td></td><td></td><td></td><td></td></tr>
-<tr><th scope="row"><a href="#m2">Installation des certificats réseau</a> sur les postes</th><td><mark class="a-remplir">[JJ/MM/AA au JJ/MM/AA]</mark></td><td></td><td>X</td><td></td><td></td><td>X</td><td></td></tr>
-<tr><th scope="row"><a href="#m3">Prise d’appels des collaborateurs</a> (équipe groupée sur Zoom) et traitement des tickets</th><td><mark class="a-remplir">[JJ/MM/AA au JJ/MM/AA]</mark></td><td></td><td>X</td><td></td><td></td><td></td><td></td></tr>
-<tr><th scope="row"><a href="#m4">Accueil des nouveaux arrivants</a> : présentation du groupe et du poste, conseils d’utilisation, sensibilisation à la cybersécurité</th><td><mark class="a-remplir">[JJ/MM/AA au JJ/MM/AA]</mark></td><td>X</td><td></td><td></td><td></td><td>X</td><td></td></tr>
-<tr><th scope="row"><a href="#p1">Déploiement des doubles écrans</a> pour les utilisateurs (participation)</th><td><mark class="a-remplir">[JJ/MM/AA au JJ/MM/AA]</mark></td><td></td><td></td><td></td><td>X</td><td>X</td><td></td></tr>
-<tr><th scope="row"><a href="#p2">Remasterisation des PC Lenovo</a> standard et pro : réglages BIOS en salle serveurs, tâche Ivanti (Windows 11, nettoyage, mises à jour)</th><td><mark class="a-remplir">[JJ/MM/AA au JJ/MM/AA]</mark></td><td></td><td></td><td></td><td></td><td>X</td><td></td></tr>
-<tr><th scope="row"><a href="#p3">Renouvellement des postes utilisateurs</a></th><td><mark class="a-remplir">[JJ/MM/AA au JJ/MM/AA]</mark></td><td>X</td><td></td><td></td><td>X</td><td>X</td><td></td></tr>
-<tr class="groupe"><th colspan="8" scope="colgroup">Réalisations en milieu professionnel en cours de seconde année</th></tr>
-<tr><th scope="row">À compléter en seconde année</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-</tbody></table></div>
+<section class="bloc apparait">
+<h2 class="h-sec blanc"><span class="ms" style="color:var(--lilas2)">task_alt</span>Mes Missions</h2>
+<div class="missions">
+<div class="mission"><span class="num">01</span><div><b>Support au comptoir de la DSI</b><span>Accueil des collaborateurs | Dépannage | Remise et échange de matériel</span></div></div>
+<div class="mission"><span class="num">02</span><div><b>Helpdesk</b><span>Prise d’appels en équipe sur Zoom | Traitement des tickets</span></div></div>
+<div class="mission"><span class="num">03</span><div><b>Préparation des postes</b><span>Configuration des sessions et des applications | Installation des certificats réseau</span></div></div>
+<div class="mission"><span class="num">04</span><div><b>Accueil des nouveaux arrivants</b><span>Présentation du groupe et du poste | Conseils d’utilisation | Sensibilisation à la cybersécurité</span></div></div>
 </div>
 </section>
+</div>
 
-<!-- E6 -->
-<section class="bloc clair" id="e6">
-<div class="page">
-<div class="tete reveal"><span class="num">08 · ÉPREUVE E6</span><h2>Administration des <em>systèmes et des réseaux</em></h2><p>Le projet que je présente et ses documents.</p></div>
-<div class="deux">
-<article class="carte reveal"><span class="tag fo">Projet principal</span><h3>Serveur de fichiers Samba B06 (projet AD Eleven Hole Star)</h3>
-<p>Mise en place d’un serveur de fichiers Samba, membre du domaine Active Directory, dans un projet de groupe où chaque équipe gérait une partie de l’infrastructure.</p>
-<ul><li>Création des VM Windows Server et Debian sous Proxmox</li><li>Serveur membre du domaine AD (<code>security = ADS</code>) : l’authentification passe par le contrôleur de domaine B05</li><li>Deux partages isolés par groupes AD : <b>[bureauetudes]</b> pour les ingénieurs, <b>[direction]</b> pour la direction</li><li>Droits sur deux couches alignées : Samba (<code>valid users</code>) et Linux (<code>chmod 2770</code>), selon le moindre privilège</li><li>Sécurité : SMBv1 désactivé (<code>min protocol = SMB2</code>) contre la faille EternalBlue</li><li>Serveur sur le VLAN 20 (172.18.20.40), journaux envoyés vers Graylog (B07)</li></ul>
-<div class="liens"><a href="docs/B06_Serveur_Fichiers_Samba.pdf">Voir la présentation (PDF)</a><a class="clair" href="docs/B06_Serveur_Fichiers_Samba.pptx" download>Télécharger (PowerPoint)</a></div></article>
-<article class="carte reveal"><span class="tag">Autres projets</span><h3>Réseau et sécurité</h3>
-<ul><li><a href="#a3">Projet Cyber</a> : DHCP snooping, port-security, DAI</li><li><a href="#a4">Projet Cisco</a> : HSRP et LACP sous Packet Tracer</li></ul>
-<p><mark class="a-remplir">[Ajoute ici les documents de ces projets : schémas, configurations, captures]</mark></p></article>
-</div>
-</div>
-</section>
-
-<!-- CONTACT -->
-<section class="bloc sombre" id="contact">
-<div class="page">
-<div class="tete reveal"><span class="num">09 · CONTACT</span><h2>Me <em>joindre</em></h2><p>Me contacter et retrouver mes documents.</p></div>
-<div class="deux">
-<article class="carte reveal"><h3>Coordonnées</h3><p>Mail : <a href="mailto:exaucee.mbimikhakayi@gmail.com">exaucee.mbimikhakayi@gmail.com</a></p></article>
-<article class="carte reveal"><h3>Mes documents</h3><div class="liens"><a href="docs/cv.pdf">Mon CV (PDF)</a><a href="docs/Tableau_de_synthese_Exaucee_MBIMI_KHAKAYI.pdf">Tableau de synthèse (PDF)</a><a href="docs/Tableau_de_synthese_Exaucee_MBIMI_KHAKAYI.xlsx" download>Tableau de synthèse (Excel)</a><a href="docs/B06_Serveur_Fichiers_Samba.pdf">Présentation Samba (PDF)</a></div></article>
-</div>
-</div>
-</section>
 </main>
-
-<footer><div class="page"><span>Portfolio BTS SIO option SISR · Session 2025 – 2027</span><span>Exaucee MBIMI KHAKAYI · <a href="#accueil">Haut de page</a></span></div></footer>
-
-<script>
-(function(){
-if(!('IntersectionObserver' in window))return;
-var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('vu');io.unobserve(e.target)}})},{threshold:.1});
-document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
-var liens={};document.querySelectorAll('.haut nav a').forEach(function(a){liens[a.getAttribute('href').slice(1)]=a});
-var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){Object.keys(liens).forEach(function(k){liens[k].removeAttribute('aria-current')});if(liens[e.target.id])liens[e.target.id].setAttribute('aria-current','true')}})},{rootMargin:'-45% 0px -50% 0px'});
-Object.keys(liens).forEach(function(k){var s=document.getElementById(k);if(s)so.observe(s)});
-})();
-</script>
+<footer><div class="wrap"><span>Portfolio BTS SIO option SISR · Session 2025 – 2027</span><span>Exaucee MBIMI KHAKAYI · <a href="contact.html">Me contacter</a></span></div></footer>
+<script src="script.js"></script>
 </body>
 </html>
