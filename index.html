@@ -132,6 +132,7 @@ tr.groupe th{background:var(--lilas);color:#fff;font-weight:700}
 .bloc.sombre .liens a{background:var(--lilas);color:#fff}
 .bloc.sombre .liens a:hover{background:var(--lilas2)}
 
+code{font-family:var(--mono);background:var(--clair);color:var(--aub);padding:1px 6px;border-radius:5px;font-size:.88em}
 mark.a-remplir{background:var(--note);color:var(--encre);padding:0 5px;border-radius:4px}
 footer{background:var(--encre);color:var(--clair);padding:28px 0;font-size:14px}
 footer .page{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
@@ -337,7 +338,7 @@ html.js .reveal.vu{opacity:1;transform:none}
 <div class="deux">
 <article class="carte reveal"><span class="tag fo">Projet principal</span><h3>Serveur de fichiers Samba B06 (projet AD Eleven Hole Star)</h3>
 <p>Mise en place d’un serveur de fichiers Samba, membre du domaine Active Directory, dans un projet de groupe où chaque équipe gérait une partie de l’infrastructure.</p>
-<ul><li>Création des VM Windows Server et Debian sous Proxmox</li><li>Intégration du serveur au domaine AD</li><li><mark class="a-remplir">[partages créés, droits d’accès, tests réalisés…]</mark></li></ul>
+<ul><li>Création des VM Windows Server et Debian sous Proxmox</li><li>Serveur membre du domaine AD (<code>security = ADS</code>) : l’authentification passe par le contrôleur de domaine B05</li><li>Deux partages isolés par groupes AD : <b>[bureauetudes]</b> pour les ingénieurs, <b>[direction]</b> pour la direction</li><li>Droits sur deux couches alignées : Samba (<code>valid users</code>) et Linux (<code>chmod 2770</code>), selon le moindre privilège</li><li>Sécurité : SMBv1 désactivé (<code>min protocol = SMB2</code>) contre la faille EternalBlue</li><li>Serveur sur le VLAN 20 (172.18.20.40), journaux envoyés vers Graylog (B07)</li></ul>
 <div class="liens"><a href="docs/B06_Serveur_Fichiers_Samba.pptx" download>Télécharger la présentation</a></div></article>
 <article class="carte reveal"><span class="tag">Autres projets</span><h3>Réseau et sécurité</h3>
 <ul><li><a href="#a3">Projet Cyber</a> : DHCP snooping, port-security, DAI</li><li><a href="#a4">Projet Cisco</a> : HSRP et LACP sous Packet Tracer</li></ul>
